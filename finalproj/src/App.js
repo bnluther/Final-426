@@ -1,24 +1,25 @@
-import logo from './logo.svg';
+import React from 'react';
+import Home from './components/Home';
+import Login from './components/Login';
+import Redirect from './components/Redirect';
+import Game from './components/Game';
+import Artists from './components/Artists';
+import Songs from './components/Songs';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" component={Login} exact={true} />
+        <Route path="/redirect" component={Redirect} />
+        <Route path="/home" component={Home} />
+        <Route path="/game" component={Game} />
+        <Route path="/artists" component={Artists} />
+        <Route path="/songs" component={Songs} />
+      </Switch>
+    </BrowserRouter>
   );
 }
 

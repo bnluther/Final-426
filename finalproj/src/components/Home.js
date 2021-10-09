@@ -1,6 +1,6 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Quote from './Quotes';
+import Quote from './Quote';
 
 function Home(){
     return (
