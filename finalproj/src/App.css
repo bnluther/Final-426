@@ -1,38 +1,188 @@
-.App {
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fde8fa;
+}
+
+/* Navbar styling */
+li {
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  min-height: 10vh;
+  align-items: center;
+  font-family: "courier-new", monospace;
+  color: white;
+  background-color: #f7931e;
+}
+
+nav .nav-links {
+  display: flex;
+  justify-content: space-around;
+  width:80%;
+  background-color: #f7931e;
+}
+
+nav .nav-links a {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #f7931e;
+  color:white;
+}
+
+nav .nav-links a:hover {
+  border-bottom: 1px solid #fde8fa;
+}
+
+nav .nav-links a:visited {
+  color:white;
+}
+
+/* Quote styling */
+.quote-container {
+  background-image: url("flower.jpeg");
+  padding: 70px;
+  font-family: "courier-new", monospace;
+  font-size: 20px;
+  color: #f769e1;
+  bottom: 0;
+  position:fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.quote-container .quote-text {
+  width: 70%;
+  background-color: #fde8fa;
+  text-align: center;
+  padding: 40px 40px 40px 40px;
+  align-self: center;
+}
+
+/* Home styling */
+.home-head{
+  margin-top: 30px;
+  text-align: center;
+  font-family: "courier-new", monospace;
+  font-weight: bold;
+  font-size: 45px;
+  color: #f769e1;
+}
+
+.home-subhead{
+  margin: 55px 120px 0 120px;
+  text-align: center;
+  font-family: "courier-new", monospace;
+  font-weight: bold;
+  color: #f769e1;
+  font-size: 25px;
+  line-height: 1.6;
+}
+
+/* Login styling */
+.login-page {
+  justify-content: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.login-button {
+  background-color: #1DB954;
   color: white;
+  padding: 15px 25px;
+  text-align: center;
+  display: inline-block;
+  font-size: 22px;
+  border:none;
+  font-family:"bookman", sans-serif;
+  border-radius: 12px;
+  justify-content: center; 
+  margin-top: 7%;
+  margin-bottom: 2%;
+  width: 200px;
+  height: 60px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Game styling */
+.game-container{
+  margin-top: 10px;
+  justify-content: center;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.grid-row {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.space {
+  background: #fff;
+  color: #1DB954;
+  border: 2px solid #f769e1;
+  float: left;
+  font-size: 90px;
+  font-weight: 900;
+  line-height: 100px;
+  height: 100px;
+  margin-right: -1px;
+  margin-top: -1px;
+  padding: 0;
+  text-align: center;
+  width: 100px;
+}
+
+.game-container .game {
+  display: inline-block;
+}
+
+.game-text {
+  margin-top: 0.7em;
+  margin-bottom: 1em;
+  text-align: center;
+  font-family: "courier-new", monospace;
+  font-weight: bold;
+  font-size: 25px;
+  color: #f769e1;
+}
+
+div button {
+  background-color: #f769e1;
+  justify-content: center;
+  font-family: "courier-new", monospace;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fde8fa;
+  border: none;
+  width: 130px;
+  height: 30px;
+}
+
+/* Top artist and song page styling */
+.artist-list {
+  text-align: start;
+  align-items: center;
+  position:fixed;
+  margin-left: 460px;
+  font-size:35px;
+}
+
+.artist-list li {
+  padding-bottom: .7em;
+}
+
+.descriptions {
+  color: #f7931e;
+  font-size: 28px;
 }
